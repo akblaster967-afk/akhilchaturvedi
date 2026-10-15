@@ -1,80 +1,44 @@
-# DrishtiAI 🔍
+# Akhil Chaturvedi — Developer Portfolio
 
-**AI-powered document verification & fraud screening platform** — upload an ID/document image or PDF and get a forensic analysis: OCR field extraction, tamper/forgery detection, AI-generated content screening, face matching, and a risk verdict.
+B.Tech CSE student building full-stack and frontend projects with a focus on practical software development.
 
-## ✨ Features
+## Current focus
 
-- **Document forensics** — ELA (Error Level Analysis), visual forgery analysis, security-feature checks, EXIF metadata inspection
-- **OCR + field extraction** — Tesseract-based OCR with hallucination/broken-glyph forensics; universal & document-specific field extractors (e.g., Aadhaar)
-- **AI-generated content screening** — deep-learning detector (PyTorch) + C2PA content-credentials provenance checks
-- **Identity & consistency** — face matching, cross-document consistency, reference comparison
-- **Risk engine** — combines all indicators into a screening verdict with audit logs
+- Full-stack web development
+- Frontend development with React
+- Backend development with Python/FastAPI
+- Building portfolio projects that demonstrate real implementation work
 
-## 🧱 Tech Stack
+## Featured projects
 
-| Layer | Tech |
-|---|---|
-| Frontend | React 19, Vite, Tailwind CSS 4, React Router, lucide-react |
-| Backend | FastAPI, Uvicorn, SQLite |
-| ML / Vision | PyTorch, OpenCV, Tesseract (pytesseract/EasyOCR), pdf2image, PyMuPDF |
+### DrishtiAI
+AI-assisted identity-document screening prototype with a React frontend and FastAPI backend. The project includes OCR and field extraction, document analysis, consistency checks, risk assessment, and related verification workflows.
 
-## 📂 Project Structure
+Repository: `akblaster967-afk/DrishtiAI`
 
-```
-├── backend/
-│   ├── app/              # FastAPI app, routes, services (forensics, OCR, ML)
-│   ├── requirements.txt
-│   └── uploads/          # runtime upload storage (gitignored)
-├── src/                  # React frontend (pages, components)
-├── app.py                # optional Streamlit dashboard
-├── vite.config.js        # proxies /api -> http://127.0.0.1:8000
-├── run_drishti.bat       # one-click launcher - backend + frontend (Windows)
-├── run_backend.bat       # backend-only launcher (Windows)
-├── run_frontend.bat      # frontend-only launcher (Windows)
-└── stop_drishti.bat      # stop both servers (Windows)
-```
+### Zepto
+React-based grocery shopping interface with reusable UI components and client-side cart interactions.
 
-## 🚀 Getting Started
+Repository: `akblaster967-afk/Zepto`
 
-### Prerequisites
-- Node.js (with npm)
-- Python 3.10+
-- Tesseract OCR installed and on PATH
+### Solar Flow Hero
+Animated solar-energy explainer built with React, SVG, and CSS animation, with a standalone Elementor HTML version.
 
-### Setup
+Repository: `akblaster967-afk/solar-flow-hero`
 
-```bash
-# 1. Frontend dependencies
-npm install
+## Internship
 
-# 2. Backend dependencies
-pip install -r backend/requirements.txt
+Available immediately for internship opportunities. Preferred location: Lucknow and nearby cities.
 
-# 3. Create backend/.env with your app secrets (SMTP credentials, etc.)
-```
+## Education
 
-### Run (backend + frontend together)
+B.Tech in Computer Science and Engineering — 2nd year
 
-```bash
-npm run dev
-```
+## Links
 
-or on Windows, simply double-click **`run_drishti.bat`** (auto-installs missing dependencies, then starts both servers).
+- GitHub: `https://github.com/akblaster967-afk`
+- DrishtiAI: `https://github.com/akblaster967-afk/DrishtiAI`
+- Zepto: `https://github.com/akblaster967-afk/Zepto`
+- Solar Flow Hero: `https://github.com/akblaster967-afk/solar-flow-hero`
 
-### One-click command files (Windows)
-
-| File | What it does |
-|---|---|
-| `run_drishti.bat` | Starts **both** backend + frontend together |
-| `run_backend.bat` | Starts **only** the FastAPI backend (with auto-reload) → http://127.0.0.1:8000 |
-| `run_frontend.bat` | Starts **only** the Vite frontend → http://localhost:5173 |
-| `stop_drishti.bat` | Stops both servers (frees ports 8000 / 5173) |
-
-All launchers auto-install missing dependencies (`npm install` / `pip install -r backend/requirements.txt`) on first run.
-
-- Frontend → http://localhost:5173
-- Backend API → http://127.0.0.1:8000 (Swagger docs at `/docs`)
-
-## 📄 License
-
-All rights reserved.
+> This repository is a portfolio/landing repository. It is separate from the GitHub profile repository convention because the GitHub account username is `akblaster967-afk`.
